@@ -51,6 +51,10 @@ const User = sequelize.define('users', {
     birthday: {
         type: Sequelize.DATEONLY,
         allowNull: false
+    },
+    email: {
+        type: Sequelize.STRING,
+        allowNull: false
     }
 });
 /*
@@ -58,7 +62,8 @@ User.sync({force: true}).then(() => {
     return User.create({
         first_name: 'Marcelo',
         last_name: 'Basílio',
-        birthday: '1980-09-17'
+        birthday: '1980-09-17',
+        email: 'marcelocbasilio@gmail.com'
     });
 });
 */

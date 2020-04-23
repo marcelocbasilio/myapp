@@ -6,10 +6,16 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "repository": {
+      "type": "git",
+      "private": "false",
+      "url": "https://github.com/marcelocbasilio/myapp.git"
+  },
   "author": "Marcelo Cordeiro Basílio",
   "license": "MIT",
   "dependencies": {
     "express": "^4.17.1",
+    "express-handlebars": "^4.0.3",
     "mysql2": "^2.1.0",
     "pg": "^8.0.3",
     "pg-hstore": "^2.3.3",
